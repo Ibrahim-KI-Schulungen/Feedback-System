@@ -649,7 +649,8 @@
     const SUPABASE_URL = 'https://nzeqfkiaidskutgkpwcv.supabase.co';
     const SUPABASE_KEY = 'sb_publishable_vqPbUSeS-90xsssPPHlm1A_zKczD0g8';
     const DEMO_MODE = false;
-    const SCHULUNG_ID = 'test001';
+    const urlParams = new URLSearchParams(window.location.search);
+    const SCHULUNG_ID = urlParams.get('s') || 'nicht-gefunden';
     
     // ============================================
     // STAR RATING
